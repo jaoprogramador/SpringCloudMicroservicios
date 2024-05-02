@@ -1,0 +1,48 @@
+# Application Configuration
+# ==========================
+server:
+  port: 8092
+
+spring:
+  h2:
+    console:
+      enabled: true
+
+# DB
+# ==========================
+datasource:
+  url: jdbc:h2:mem:customersBD;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+  driver-class-name: org.h2.Driver
+  platform: h2
+  username: sa
+  password:
+
+h2:
+  console:
+    enabled: true
+    path: /h2-console
+
+# JPA / HIBERNATE (solo para la parte de desarrollo)
+# ==================================================
+jpa:
+  database-platform: org.hibernate.dialect.H2Dialect
+  hibernate:
+    ddl-auto: update
+  properties:
+    hibernate:
+      show_sql: true
+      format_sql: false
+      use_sql_comments: false
+
+logging:
+  # level:
+  #   root: INFO
+  #   org.springframework: INFO
+  #   com.example: DEBUG
+  # file:
+  #   name: /var/log/myapp.log
+  pattern:
+    # file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  # console:
+    # pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - "
