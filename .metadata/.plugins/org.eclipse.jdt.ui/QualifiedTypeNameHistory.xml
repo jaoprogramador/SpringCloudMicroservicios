@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="academy.digitallab.store.shopping.model.Customer"/>
+<fullyQualifiedTypeName name="javax.persistence.Transient"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.FeignClient"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
+<fullyQualifiedTypeName name="academy.digitallab.store.shopping.client.CostumerClient"/>
+<fullyQualifiedTypeName name="academy.digitallab.store.shopping.client.ProductClient"/>
+<fullyQualifiedTypeName name="academy.digitallab.store.shopping.model.Product"/>
+</qualifiedTypeNameHistroy>

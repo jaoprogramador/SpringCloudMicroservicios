@@ -1,11 +1,11 @@
-#Thu May 02 17:43:54 CEST 2024
+#Tue May 07 07:36:22 CEST 2024
 vl=How many times the 'Finish' button pressed during the day
 l=Wizard class name
 ct=jbt
-d=1714664634083
+d=1715060182674
 c=0
 cmp=usage
 a=finishWizard
 cl=org.eclipse.buildship.ui.internal.wizard.project.ProjectImportWizard
 v=2.2.4
-s=5
+s=0

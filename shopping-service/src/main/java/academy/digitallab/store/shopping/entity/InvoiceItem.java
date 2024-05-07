@@ -1,12 +1,17 @@
 package academy.digitallab.store.shopping.entity;
 
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+import javax.validation.constraints.Positive;
+
 import academy.digitallab.store.shopping.model.Product;
 import lombok.Data;
-
-import javax.persistence.*;
-import javax.validation.constraints.Positive;
-import java.io.Serializable;
 
 @Entity
 @Data
@@ -23,13 +28,13 @@ public class InvoiceItem  {
     @Column(name = "product_id")
     private Long productId;
 
-    
+
     @Transient
     private Double subTotal;
 
     @Transient
     private Product product;
-    //esto es una cuenta que se genera en memoria pero no se almacena en BD
+    
     public Double getSubTotal(){
         if (this.price >0  && this.quantity >0 ){
             return this.quantity * this.price;

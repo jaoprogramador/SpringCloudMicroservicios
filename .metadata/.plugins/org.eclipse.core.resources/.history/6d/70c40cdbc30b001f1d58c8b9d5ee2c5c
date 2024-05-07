@@ -1,0 +1,14 @@
+package academy.digitallab.store.shopping.client;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+
+@RequestMapping (value = "/products")
+public interface ProductClient {
+	 @GetMapping(value = "/{id}")
+	 public ResponseEntity<Product> getProduct(@PathVariable("id") Long id);
+}
