@@ -33,6 +33,8 @@ spring:
         use_sql_comments: false
         format_sql: false
 logging:
+  file:
+    	name: "C:\\data\\logGradel\\Shopping.log"
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
 eureka:
